@@ -1,0 +1,59 @@
+@import './variables.scss';
+
+.canvas{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 250px;
+    z-index: 0;
+}
+
+canvas {
+    background-color: white;
+    box-shadow: $light-shadow;
+}
+
+
+
+.input-container{
+    position: absolute;
+    padding: 5px;
+    outline: 2px dashed gray;
+    cursor: move;
+    will-change: transform;
+    .text-input{
+        border: none;
+        height: 20px;
+        background: none;
+        position: relative;
+        width: 150px;
+        outline: none;
+    }
+    .input-element-left{
+        width: 7px;
+        height: 7px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid gray;
+        z-index: 2;
+        position: absolute;
+        left: -4px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor:e-resize;
+    }
+    .input-element-right{
+        width: 7px;
+        height: 7px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid gray;
+        position: absolute;
+        right: -4px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        cursor:e-resize;
+    }
+}
+

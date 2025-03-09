@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+.line-width{
+    top: 50%;
+    transform: translateY(-50%) translateX(50px);
+    position: absolute;
+    height: max-content;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: $light-shadow;
+    hr{
+        border: none;
+        width: 4px;
+        margin-right: 5px;
+        border-radius: 5px;
+        height: 15px;
+        background-color: rgb(0, 0, 0);
+    }
+    &__item{
+        height: 30px;
+        padding: 5px 10px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:hover{
+            background-color: gainsboro;
+            border-radius: 7px;
+        }
+    }
+    &__line{
+        border-radius: 7px;
+        width: 100px;
+        margin-left: 10px;
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .line-width{
+        left: 50%;
+        top: calc(100% + 10px);
+        transform: translateY(0%) translateX(-50%);
+    }
+}
