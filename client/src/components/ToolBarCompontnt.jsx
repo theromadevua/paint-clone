@@ -74,10 +74,6 @@ const ToolBar = () => {
                 <img src={text}/>
             </div>
 
-
-
-
-
             <div className="toolbar__btn line-width-btn" onClick={() => {toolState.activateLineMenu(true)}}>
                 <img src={lineWidth}/>
             </div>
@@ -85,9 +81,7 @@ const ToolBar = () => {
             <div className="toolbar__btn color_input" onClick={() => {toolState.activateColorPicker(true)}} style={{border: `3px solid ${color}`}}>
                 <img src={set_color}/>
             </div>
-
            
-
             <div className="toolbar__btn download" onClick={() => {download()}}>
                 <img src={downloadImg}/>
             </div>
